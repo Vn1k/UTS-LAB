@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Ceviche+One&family=Noto+Sans+JP&display=swap%27');
+
+#up {
+    font-family: 'Ceviche One', cursive;
+    font-size: 32px;
+}
+
+#sushi, #onigiri, #ramen {
+    font-family: 'Ceviche One', cursive;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    margin: 2px;
+}
+#jsushi, #jonigiri, #jramen {
+    font-family: 'Ceviche One', cursive;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hsushi, #honigiri, #hramen {
+    margin-right: 920px;
+    margin-top: 6px;
+}
