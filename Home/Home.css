@@ -1,8 +1,39 @@
-#gerbang {
-    width: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Ceviche+One&family=Noto+Sans+JP&display=swap');
+
+* {
+    font-family: 'Ceviche One', cursive;
 }
-#gb-child {
+.navbar {
+    background-color: #fdc5db!important; 
+    box-shadow: 2px 2px 4px 2px #ce339f;
+}
+.navbar-brand {
+    font-size: 38px;
+}
+
+.navbar-brand #Moyshi {
+    color: orange;
+}
+
+.navbar-brand #X{
+    color: black;
+}
+
+.navbar-brand #IC {
+    color: red;
+}
+#gerbang {
     position: relative;
     top: 50%;
-    left: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 300px;
+}
+
+#sakura {
+    width: 600px;
+    position: absolute;
+    top: -14%;
+    left: 68.54%;
+    z-index: 1;
 }
