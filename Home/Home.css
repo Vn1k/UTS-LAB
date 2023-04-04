@@ -1,0 +1,8 @@
+#gerbang {
+    width: 250px;
+}
+#gb-child {
+    position: relative;
+    top: 50%;
+    left: 100%;
+}

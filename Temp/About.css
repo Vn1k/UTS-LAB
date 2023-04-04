@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Ceviche+One&family=Noto+Sans+JP&display=swap');
+
+* {
+    font-family: 'Ceviche One', cursive;
+}
+/*Nav*/
+.navigasi {
+    
+}
+#gerbang {
+    width: 250px;
+}
+#gb-child {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*END Nav*/
+/*CARD*/
+
+/*END CARD*/

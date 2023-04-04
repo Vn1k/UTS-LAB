@@ -1,0 +1,7 @@
+data diri 
+referensi membuat kdoing 
+font-family: 'Almendra', serif;
+font-family: 'Ceviche One', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Ceviche+One&family=Noto+Sans+JP&display=swap');
