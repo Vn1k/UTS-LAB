@@ -9,6 +9,7 @@
     font-family: 'Ceviche One', cursive;
     font-size: 18px;
     border-radius: 5px;
+    width: 90px;
     height: 30px;
     margin: 2px;
 }
@@ -17,12 +18,9 @@
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 #hsushi, #honigiri, #hramen {
-    margin-right: 10px;
-    margin-left: 10px;
-
+    margin-right: 920px;
+    margin-top: 6px;
 }
