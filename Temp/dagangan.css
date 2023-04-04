@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra&family=Ceviche+One&family=Noto+Sans+JP&display=swap%27');
 
-#up {
+#upgrade {
     font-family: 'Ceviche One', cursive;
     font-size: 32px;
+    color: #4e4e51;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 10px;
 }
 
 #sushi {
@@ -47,18 +50,21 @@
 #sushi:hover {
     transition: all 0.5s ease;
     box-shadow: 0 0 5px 2px orange;
+    background-color: #ffaf3f;
     color: #ffb043;
 }
 
 #onigiri:hover {
     transition: all 0.5s ease;
     box-shadow: 0 0 5px 2px rgb(82, 170, 58);
+    background-color: #86ed00;
     color: #6eab1f;
 }
 
 #ramen:hover {
     transition: all 0.5s ease;
     box-shadow: 0 0 5px 2px rgb(248, 94, 33);
+    background-color: #ff6e30;
     color: #ff9924;
 }
 
@@ -70,6 +76,8 @@
 }
 
 #hsushi, #honigiri, #hramen {
-    margin-right: 920px;
+    margin-right: 950px;
     margin-top: 6px;
+    color: #4e4e51;
+    text-shadow: 1px 1px 1px #000;
 }
