@@ -6,27 +6,36 @@ const avatar2 = '/Images/CHAR/charSENANG.png';
 
 // let clicks = false;
 
-var money = 0;
+var currentmoney = 0;
 var currentcharsize = parseInt(window.getComputedStyle(avatar).getPropertyValue('width'));
 
 function AddMoney(){
-    money++;
-    moneycounter.textContent = "Your Score : " + money;
+    currentmoney++;
+    moneycounter.textContent = "Your Score : " + currentmoney;
     avatar.src = avatar2;
     avatar.style.width = '18vw';
-    var animation = setTimeout(function(){
+    setTimeout(function(){
         avatar.src = avatar1;
         avatar.style.width = '20vw';
     }, 250)
 }
 
 function RemoveMoney(removedmoney){
-    money -= removedmoney;
-    moneycounter.textContent = "Your Score : " + money;
+    var counter = 1;
+    var money = currentmoney;
+    currentmoney -= removedmoney;
+    var DecreasingAnimation = setInterval(function(){
+        if(counter == removedmoney){
+            clearInterval(DecreasingAnimation);
+        }
+        money--;
+        counter++;
+        moneycounter.textContent = "Your Score : " + money;
+    }, 10)
 }
 
 function SellSushi(){
-    if(money < 85){
+    if(currentmoney < 85){
         alert("Tidak Cukup");
     }
     else{
@@ -35,7 +44,7 @@ function SellSushi(){
 }
 
 function SellOnigiri(){
-    if(money < 35){
+    if(currentmoney < 35){
         alert("Tidak Cukup");
     }
     else{
@@ -44,7 +53,7 @@ function SellOnigiri(){
 }
 
 function SellTempura(){
-    if(money < 65){
+    if(currentmoney < 65){
         alert("Tidak Cukup");
     }
     else{
