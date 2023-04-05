@@ -173,6 +173,7 @@ body {
     display: flex;
 }
 
+
 @keyframes popup {
     0% {
         opacity: 0;
