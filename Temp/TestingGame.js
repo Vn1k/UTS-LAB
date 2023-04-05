@@ -60,21 +60,3 @@ function SellTempura(){
     }
 }
 
-// function change(){
-//     avatar.addEventListener("mousedown", function(){
-//         clicks = true;
-//         avatar.style.width = "22vw";
-//         avatar.style.height =  "22vw";
-//         setTimeout(function(){
-//             if(clicks){
-//                 avatar.src = '/Assets/charDIAM.png';
-//                 clicks = false;
-//                 avatar.style.width = "20vw";
-//                 avatar.style.height = "20vw";
-//             }
-//         },50);
-//     });
-//     avatar.addEventListener("mouseup", function(){
-//         clicks = false;
-//     });
-// }

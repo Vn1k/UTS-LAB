@@ -40,6 +40,7 @@ body {
 }
 
 /*//////////////*/
+
 #konten {
     position: absolute;
     left: 1vw;
@@ -61,10 +62,13 @@ body {
     color: #ff9924;
     border: 2px solid black;
     border-radius: 5px;
-    width: 12vw;
-    height: auto;
-    margin-bottom: 1vh;
+    width: 200px;
+    height: 40px;
+    margin: 2px;
+    margin-bottom: 10px;
     background-color: orange;
+    display: flex;
+    justify-content: space-between;
 }
 
 #onigiri {
@@ -74,10 +78,13 @@ body {
     color: #6eab1f;
     border: 2px solid black;
     border-radius: 5px;
-    width: 12vw;
-    height: auto;
-    margin-bottom: 1vh;
+    width: 200px;
+    height: 40px;
+    margin: 2px;
+    margin-bottom: 10px;
     background-color: rgb(82, 170, 58);
+    display: flex;
+    justify-content: space-between;
 }
 
 #tempura {
@@ -87,9 +94,17 @@ body {
     color: #ff8324;
     border: 2px solid black;
     border-radius: 5px;
-    width: 12vw;
-    height: auto;
+    width: 200px;
+    height: 40px;
+    margin: 2px;
+    margin-bottom: 10px;
     background-color: rgb(248, 94, 33);
+    display: flex;
+    justify-content: space-between;
+}
+
+#sushi img, #onigiri img, #tempura img {
+    width: 30px;
 }
 
 #sushi:hover {
@@ -121,4 +136,55 @@ body {
 #hsushi, #honigiri, #htempura {
     color: #4e4e51;
     text-shadow: 1px 1px 1px #000;
+    margin-left: 10px;
+}
+
+/*////////////////////////////////////*/
+
+#popup {
+    position: absolute;
+    flex-direction: column;
+    background-color: #f9cfc2;
+    border: solid 2px #55527c;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    width: 40%;
+    z-index: 999;
+    opacity: 0;
+    transform: scale(0);
+    animation: popup 4s ease-in-out forwards; 
+}
+
+#content {
+    font-family:  'Ceviche One', cursive;
+    background-clip: text;
+    color: #55527c;
+    -webkit-text-stroke: 3px 0px 3px #000;
+    font-size: 25px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    display: flex;
+}
+
+@keyframes popup {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
