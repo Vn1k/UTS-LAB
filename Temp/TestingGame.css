@@ -155,8 +155,9 @@ body {
     z-index: 999;
     opacity: 0;
     transform: scale(0.5) translate(0, 50%);
-    animation: popup 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards, 
-    bounce 1s ease-in-out;
+    animation: popup 1s linear forwards, 
+    bounce 2s ease-in-out,
+    disappear 4s forwards;
 }
 
 #content
@@ -172,7 +173,6 @@ body {
     font-size: 40px;
     display: flex;
 }
-
 
 @keyframes popup {
     0% {
@@ -191,5 +191,14 @@ body {
     }
     50% {
         transform: translate(0, -10px);
+    }
+}
+
+@keyframes disappear {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
     }
 }
