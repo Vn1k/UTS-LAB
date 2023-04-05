@@ -17,14 +17,68 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
     background-color: pink;
+    border-bottom: 2px solid #ddd;
 }
-
+ 
 #judul {
     display: flex;
+    text-align: center;
     letter-spacing: 1px;
+    align-items: center;
+    margin: 0 auto;
 }
+  
+#judul h2 {
+    margin-right: 5px;
+}
+  
+#menu {
+    display: flex;
+    align-items: center;
+}
+  
+#menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+#menu li {
+    margin: 0 10px;
+}
+  
+#menu a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition:all 0.2s ease;
+}
+  
+#menu a:hover {
+    background-color: #ddd;
+}
+  
+#judul h2:first-child,
+#judul h2:last-child {
+    margin-right: auto;
+}
+  
+#menu li:first-child {
+    margin-right: auto;
+}
+  
+#menu li:last-child {
+    margin-left: auto;
+}  
 /*end navigasi*/
 /*background*/
 img {
@@ -54,8 +108,8 @@ img {
     width: 600px;
     position: absolute;
     bottom: 50%;
-    left: 50%;
-    transform: translate(58.2%);
+    left: 49.9%;
+    transform: translate(58.7%);
     z-index: 1;
     pointer-events: none;
 }
@@ -63,6 +117,18 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
+    pointer-events: none;
+}
+#ninja {
+    width: 100%;
+    max-width: 150px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 /*end bg*/
 /*rules*/
@@ -70,6 +136,7 @@ img {
     padding: 1rem 2rem;
     background-color: #55527c;
     color: white;
+    text-align: center;
 }
 /*end rules*/
 @media only screen and (max-width: 600px) {
@@ -79,6 +146,12 @@ img {
     #gerbang {
         max-width: 300px;
     }
+    #rules {
+        padding: 1rem 2rem;
+        background-color: #55527c;
+        color: white;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 767px) {
     #sakura {
@@ -86,5 +159,11 @@ img {
     }
     #gerbang {
         max-width: 400px;
+    }
+    #rules {
+        padding: 1rem 2rem;
+        background-color: #358300;
+        color: white;
+        text-align: center;
     }
 }
