@@ -26,15 +26,30 @@ function RemoveMoney(removedmoney){
 }
 
 function SellSushi(){
-    RemoveMoney(85)
+    if(money < 85){
+        alert("Tidak Cukup");
+    }
+    else{
+        RemoveMoney(85);
+    }
 }
 
 function SellOnigiri(){
-    RemoveMoney(35)
+    if(money < 35){
+        alert("Tidak Cukup");
+    }
+    else{
+        RemoveMoney(35);
+    }
 }
 
 function SellTempura(){
-    RemoveMoney(65)
+    if(money < 65){
+        alert("Tidak Cukup");
+    }
+    else{
+        RemoveMoney(65);
+    }
 }
 
 // function change(){
