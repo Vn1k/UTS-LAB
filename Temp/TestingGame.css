@@ -120,8 +120,8 @@ nav {
 #upgrade {
     font-family: 'Ceviche One', cursive;
     font-size: 32px;
-    color: #4e4e51;
-    text-shadow: 1px 1px 1px #000;
+    /* color: #000000; */
+    /* text-shadow: 1px 1px 1px #000; */
     margin-bottom: 1vh;
     margin-top: 20vh;
 }
@@ -211,8 +211,8 @@ nav {
 }
 
 #hsushi, #honigiri, #htempura, #hac {
-    color: #4e4e51;
-    text-shadow: 1px 1px 1px #000;
+    /* color: #000000; */
+    /* text-shadow: 1px 1px 1px #000; */
     margin-left: 10px;
 }
 
