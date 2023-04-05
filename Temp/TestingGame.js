@@ -1,5 +1,6 @@
 const moneycounter = document.getElementById('moneycounter');
-const avatar = document.getElementById('sushi');
+const avatar = document.getElementById('sushichar');
+
 const avatar1 = '/Images/CHAR/charDIAM.png'
 const avatar2 = '/Images/CHAR/charSENANG.png';
 
@@ -17,6 +18,23 @@ function AddMoney(){
         avatar.src = avatar1;
         avatar.style.width = '20vw';
     }, 250)
+}
+
+function RemoveMoney(removedmoney){
+    money -= removedmoney;
+    moneycounter.textContent = "Your Score : " + money;
+}
+
+function SellSushi(){
+    RemoveMoney(85)
+}
+
+function SellOnigiri(){
+    RemoveMoney(35)
+}
+
+function SellTempura(){
+    RemoveMoney(65)
 }
 
 // function change(){

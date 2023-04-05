@@ -9,11 +9,28 @@
 </head>
 <body>
     <div id="container">
+        <div id="konten">
+            <div id="upgrade">Upgrades Dagangan</div>
+            <div id="makanan">
+                <div id="jsushi">
+                    <button onmousedown="SellSushi()" id="sushi">Jual Sushi</button>
+                    <div id="hsushi">85</div>
+                </div>
+                <div id="jonigiri">
+                    <button onmousedown="SellOnigiri()" id="onigiri">Jual Onigiri</button>
+                    <div id="honigiri">35</div>
+                </div>
+                <div id="jtempura">
+                    <button onmousedown="SellTempura()" id="tempura">Jual Tempura</button>
+                    <div id="htempura">65</div>
+                </div>
+            </div>
+        </div>
         <div id="moneycounterblock">
             <h1 id="moneycounter">Your Score : 0</h1>
         </div>
         <div id="character">
-            <img onmousedown="AddMoney()" id="sushi" src="../Assets/charDIAM.png"/>
+            <img onmousedown="AddMoney()" id="sushichar" src="../Images/CHAR/charDIAM.png"/>
         </div>
     </div>
     <script src="TestingGame.js"></script>
