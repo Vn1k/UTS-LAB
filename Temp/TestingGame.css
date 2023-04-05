@@ -153,10 +153,8 @@ body {
     width: 40%;
     z-index: 999;
     opacity: 0;
-    transform: scale(0.5) translate(0, 50%);
-    animation: popup 1s linear forwards, 
-    bounce 2s ease-in-out,
-    disappear 4s forwards;
+    transform: scale(0);
+    animation: popup 4s ease-in-out forwards; 
 }
 
 #content {
@@ -173,38 +171,20 @@ body {
 }
 
 @keyframes popup {
-    0% {
-        opacity: 0;
-        transform: scale(0.5) translate(0, 50%);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) translate(0, 0);
-    }
-}
-
-@keyframes bounce {
     0%, 100% {
-        transform: translate(0, 0);
+        opacity: 0;
+        transform: scale(0);
     }
     25% {
-        transform: translate(0, -10px);
-    }
-    50% {
-        transform: translate(0, 0);
-    }
-    75% {
-        transform: translate(0, 10px);
-    }
-}
-
-@keyframes disappear {
-    0%, 100% {
-        opacity: 0;
-        transform: scale(0.5) translate(0, 50%);
+        opacity: 1;
+        transform: scale(1);
     }
     50% {
         opacity: 1;
-        transform: scale(1) translate(0, 0);    
+        transform: scale(0);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
