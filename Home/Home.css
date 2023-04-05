@@ -3,6 +3,16 @@
 * {
     font-family: 'Ceviche One', cursive;
 }
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+/*navigasi*/
 .navbar {
     background-color: #fdc5db!important; 
     box-shadow: 2px 2px 4px 2px #ce339f;
@@ -12,28 +22,79 @@
 }
 
 .navbar-brand #Moyshi {
-    color: orange;
+    color: #ddcfc5;
+    text-shadow: 0 0 10px black;
+    margin-right: 10px;
 }
 
 .navbar-brand #X{
-    color: black;
+    color: #b89081;
+    text-shadow: 0 0 10px black;
+    margin-right: 10px;
 }
 
 .navbar-brand #IC {
-    color: red;
+    color: #ddcfc5;
+    text-shadow: 0 0 10px black;
+}
+
+.navbar-nav {
+    font-size: 24px;
+    margin-left: 20px;
+    justify-content: end;
+}
+.navbar-nav li a {
+    color: #ddcfc5 !important;
+    text-shadow: 0 0 10px black;
+}
+/*end navigasi*/
+/*background*/
+.background {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    overflow: hidden;
 }
 #gerbang {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
-    width: 300px;
+    transform: translate(-50%, -50%);
+    width: 610px;
+    pointer-events: none;
 }
 
 #sakura {
     width: 600px;
     position: absolute;
-    top: -14%;
-    left: 68.54%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(60%);
     z-index: 1;
+    pointer-events: none;
+}
+#grass {
+    position: relative;
+    top: -13%;
+}
+/*end bg*/
+@media only screen and (max-width: 767px) {
+    #gerbang {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        width: 300px;
+        pointer-events: none;
+    }
+    
+    #sakura {
+        display: none;
+    }
+    
+    #grass {
+        position: absolute;
+        top:-5%;
+        height: 500px;
+    }
 }

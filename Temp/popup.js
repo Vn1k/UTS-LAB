@@ -11,7 +11,7 @@ function gamepressed(){
     }, 18000)
 }
 */
-
+/*
 function popup()
 {
     hide();
@@ -24,3 +24,24 @@ function popup()
         parentpopup.removeChild(popup);
     }, 18000)
 }
+*/
+document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none"; // hide popup by default
+  
+    function showPopup() {
+      popup.style.display = "flex";
+    }
+  
+    function hidePopup() {
+      popup.style.display = "none";
+    }
+  
+    popupButton.addEventListener("click", function() {
+        showPopup();
+        setTimeout(function() {
+            hidePopup();
+        }, 3000);
+    });
+});
+  
