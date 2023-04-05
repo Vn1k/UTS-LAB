@@ -7,7 +7,6 @@ const avatar2 = '/Images/CHAR/charSENANG.png';
 // let clicks = false;
 
 var currentmoney = 0;
-var currentcharsize = parseInt(window.getComputedStyle(avatar).getPropertyValue('width'));
 
 function AddMoney(){
     currentmoney++;
