@@ -153,6 +153,8 @@ body {
     display: flex;
     width: 40%;
     z-index: 999;
+    opacity: 0;
+    animation: appear 1s forwards;
 }
 
 #content
@@ -167,4 +169,15 @@ body {
     justify-content: center;
     font-size: 40px;
     display: flex;
+    opacity: 0;
+    animation: appear 1s forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
