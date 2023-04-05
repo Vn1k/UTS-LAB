@@ -3,8 +3,8 @@
 #popup
 {
     flex-direction: column;
-    background-color: rgb(253, 153, 208);
-    border: solid 5px #e700d0;
+    background-color: #f9cfc2;
+    border: solid 2px #55527c;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -17,8 +17,8 @@
 {
     font-family:  'Ceviche One', cursive;
     background-clip: text;
-    color: rgb(254, 76, 44);
-    -webkit-text-stroke: 1px #000;
+    color: #55527c;
+    -webkit-text-stroke: 3px 0px 3px #000;
     font-size: 25px;
     margin: 0px;
     align-items: center;
