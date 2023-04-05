@@ -1,3 +1,4 @@
+const container = document.getElementById('container');
 const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
 
@@ -33,9 +34,25 @@ function RemoveMoney(removedmoney){
     }, 10)
 }
 
+function NotEnoughMoney(){
+    var popup = document.createElement('div');
+    popup.id = 'popup';
+    var insidepopup = document.createElement('div');
+    insidepopup.id = 'content';
+    var inside2popup = document.createElement('p');
+    inside2popup.textContent = "UANG TIDAK MENCUKUPI!";
+
+    insidepopup.appendChild(inside2popup);
+    popup.appendChild(insidepopup);
+    container.insertBefore(popup, container.firstChild);
+    setTimeout(function(){
+        container.removeChild(popup);
+    }, 2000)
+}
+
 function SellSushi(){
     if(currentmoney < 85){
-        alert("Tidak Cukup");
+        NotEnoughMoney();
     }
     else{
         RemoveMoney(85);
@@ -44,7 +61,7 @@ function SellSushi(){
 
 function SellOnigiri(){
     if(currentmoney < 35){
-        alert("Tidak Cukup");
+        NotEnoughMoney();
     }
     else{
         RemoveMoney(35);
@@ -53,7 +70,7 @@ function SellOnigiri(){
 
 function SellTempura(){
     if(currentmoney < 65){
-        alert("Tidak Cukup");
+        NotEnoughMoney();
     }
     else{
         RemoveMoney(65);
