@@ -5,8 +5,7 @@
 }
 
 
--body
-<!-{
+body{
     background: linear-gradient(to bottom, #23395d, #203354, #1c2e4a, #192841, #152238);
 }
 
@@ -108,7 +107,7 @@ nav {
   }
 
 /*CARD*/
-
+/*
 img {
   width: 20%;
 }
@@ -123,8 +122,9 @@ img {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   height: 300px;
+  width: 15%;
 }
 .section_item {
   scroll-snap-align: start;
 }
-/*END CARD*/
+END CARD*/
