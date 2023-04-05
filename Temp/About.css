@@ -4,11 +4,11 @@
     font-family: 'Ceviche One', cursive;
 }
 
-
--body
-<!-{
+body{
     background: linear-gradient(to bottom, #23395d, #203354, #1c2e4a, #192841, #152238);
-}
+    overflow: hidden;
+  }
+
 
 nav {
     display: flex;
@@ -23,13 +23,17 @@ nav {
   #judul {
     display: flex;
     align-items: center;
-    
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 2px;
     width: 100%;
+  }
+
+  #judul:hover
+  {
+    text-shadow: 2px 2px 3px #000;
   }
 
   #judul a
@@ -109,22 +113,79 @@ nav {
 
 /*CARD*/
 
-img {
-  width: 20%;
+#aboutus
+{
+  display: flex;
 }
 
-.parent {
+.wrapper {
   display: flex;
-  align-items: center;
-  height: 100%;
+  scroll-snap-type: x mandatory; 
+  overflow: auto;
 }
-.section {
+section {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  height: 300px;
-}
-.section_item {
+  flex-flow: row nowrap;
   scroll-snap-align: start;
+  min-width: 120vw;  
+  align-items: center;
+  justify-content: center;
 }
+
+.card-title
+{
+  font-size: 200%;
+}
+
+.card-text
+{
+  font-size: 200%;
+}
+
+.card
+{
+  width: 100%;
+  height: 80vh;
+  max-width: 350px;
+  margin: 10px;
+}
+
+.card:hover
+{
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+}
+
+.card:hover img 
+{
+  display: none;
+}
+
+.card:hover .card-body
+{
+  display: none;
+}
+
+.content
+{
+
+}
+
+.content:hover span
+{
+  display: block;
+}
+
+.ig
+{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
 /*END CARD*/

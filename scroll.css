@@ -14,6 +14,7 @@ html, body, .parent {
     height: 360px;
     width: 200px;
     margin: 20px;
+    scale: 120%;
 }
 /*end disesuain*/
 /* template*/
@@ -26,7 +27,7 @@ html, body, .parent {
 /*end template*/
 /*atur ukuran scroll*/
 .section{
-    width: 15%;
+    width: 10%;
     height: 430px;
     flex-flow: row nowrap;
 }
