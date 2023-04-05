@@ -2,6 +2,8 @@
 
 * {
     font-family: 'Ceviche One', cursive;
+    padding: 0;
+    margin: 0;
 }
 
 html, body{
@@ -10,45 +12,25 @@ html, body{
 }
 
 body {
-    overflow: hidden;
 }
 /*navigasi*/
-.navbar {
-    background-color: #fdc5db!important; 
-    box-shadow: 2px 2px 4px 2px #ce339f;
-}
-.navbar-brand {
-    font-size: 38px;
-}
-
-.navbar-brand #Moyshi {
-    color: #ddcfc5;
-    text-shadow: 0 0 10px black;
-    margin-right: 10px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: pink;
 }
 
-.navbar-brand #X{
-    color: #b89081;
-    text-shadow: 0 0 10px black;
-    margin-right: 10px;
-}
-
-.navbar-brand #IC {
-    color: #ddcfc5;
-    text-shadow: 0 0 10px black;
-}
-
-.navbar-nav {
-    font-size: 24px;
-    margin-left: 20px;
-    justify-content: end;
-}
-.navbar-nav li a {
-    color: #ddcfc5 !important;
-    text-shadow: 0 0 10px black;
+#judul {
+    display: flex;
+    letter-spacing: 1px;
 }
 /*end navigasi*/
 /*background*/
+img {
+    max-width: 100%;
+    height: auto;
+}
 .background {
     position: relative;
     z-index: 2;
@@ -60,41 +42,49 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 610px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    max-height: 80vh;
     pointer-events: none;
 }
-
-#sakura {
+#sakura
+ {
     width: 600px;
     position: absolute;
     bottom: 50%;
     left: 50%;
-    transform: translate(60%);
+    transform: translate(58.2%);
     z-index: 1;
     pointer-events: none;
 }
 #grass {
-    position: relative;
-    top: -13%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 /*end bg*/
-@media only screen and (max-width: 767px) {
-    #gerbang {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 100%);
-        width: 300px;
-        pointer-events: none;
-    }
-    
+/*rules*/
+#rules {
+    padding: 1rem 2rem;
+    background-color: #55527c;
+    color: white;
+}
+/*end rules*/
+@media only screen and (max-width: 600px) {
     #sakura {
         display: none;
     }
-    
-    #grass {
-        position: absolute;
-        top:-5%;
-        height: 500px;
+    #gerbang {
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #sakura {
+        display: none;
+    }
+    #gerbang {
+        max-width: 400px;
     }
 }
