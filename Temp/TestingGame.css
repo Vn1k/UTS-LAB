@@ -93,7 +93,7 @@ nav {
 
 #moneycounterblock {
     position: absolute;
-    top: 11vh;
+    top: 16vh;
 }
 
 #character {
@@ -123,7 +123,7 @@ nav {
     color: #4e4e51;
     text-shadow: 1px 1px 1px #000;
     margin-bottom: 1vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 #sushi {
@@ -133,8 +133,8 @@ nav {
     color: #ff9924;
     border: 2px solid black;
     border-radius: 5px;
-    width: 200px;
-    height: 40px;
+    width: 210px;
+    height: 50px;
     margin: 2px;
     margin-bottom: 10px;
     background-color: orange;
@@ -149,8 +149,8 @@ nav {
     color: #6eab1f;
     border: 2px solid black;
     border-radius: 5px;
-    width: 200px;
-    height: 40px;
+    width: 210px;
+    height: 50px;
     margin: 2px;
     margin-bottom: 10px;
     background-color: rgb(82, 170, 58);
@@ -165,8 +165,8 @@ nav {
     color: #ff8324;
     border: 2px solid black;
     border-radius: 5px;
-    width: 200px;
-    height: 40px;
+    width: 210px;
+    height: 50px;
     margin: 2px;
     margin-bottom: 10px;
     background-color: rgb(248, 94, 33);
@@ -174,8 +174,14 @@ nav {
     justify-content: space-between;
 }
 
+#su, #oni, #tem {
+    margin-left: 6px;
+}
+
 #sushi img, #onigiri img, #tempura img {
     width: 30px;
+    margin-top: 6px;
+    margin-right: 3px;
 }
 
 #sushi:hover {
@@ -217,8 +223,8 @@ nav {
     color: #B89081;
     border: 2px solid black;
     border-radius: 5px;
-    width: 200px;
-    height: 40px;
+    width: 210px;
+    height: 50px;
     background-color: #f9cfc2;
 }
 
