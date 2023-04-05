@@ -12,73 +12,93 @@ html, body{
 }
 
 body {
+    background: linear-gradient(to bottom, #2b88d8, #71afe5, #c7e0f4, #deecf9, #eff6fc);
 }
 /*navigasi*/
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: pink;
-    border-bottom: 2px solid #ddd;
-}
- 
-#judul {
-    display: flex;
     text-align: center;
-    letter-spacing: 1px;
-    align-items: center;
-    margin: 0 auto;
-}
+    padding: 1rem 2rem;
+    background-color: #ff87b2;
+    box-shadow: 0 0 5px 5px #c7c7c7;
+    position: relative;
+    height: 10vh;
+  }
   
-#judul h2 {
-    margin-right: 5px;
-}
-  
-#menu {
+  #judul {
     display: flex;
     align-items: center;
-}
-  
-#menu ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-  
-#menu li {
-    margin: 0 10px;
-}
-  
-#menu a {
-    display: block;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #333;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     font-weight: bold;
-    transition:all 0.2s ease;
-}
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
   
-#menu a:hover {
-    background-color: #ddd;
-}
+  #judul span {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  #menu {
+    font-size: 1.2rem;
+    z-index: 2;
+  }
   
-#judul h2:first-child,
-#judul h2:last-child {
-    margin-right: auto;
-}
+  #menu-list ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:  0;
+  }
   
-#menu li:first-child {
-    margin-right: auto;
-}
+  #menu-list a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
   
-#menu li:last-child {
-    margin-left: auto;
-}  
+  #menu-list a:hover {
+    background-color: #fff;
+    color: #ff87b2;
+  }
+  
+  #About {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+
+  }
+  
+  #Ref {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(50%,-50%);
+    color: #fff;
+  }
+  
+  /* Animasi ketika cursor berada di atas brand name */
+  #judul:hover {
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Animasi ketika cursor berada di atas menu item */
+  #menu-list a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  
 /*end navigasi*/
 /*background*/
 img {
@@ -130,13 +150,78 @@ img {
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+
+#gerobak {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(350deg);
+    display: none;
+}
 /*end bg*/
 /*rules*/
-#rules {
+#reference {
     padding: 1rem 2rem;
     background-color: #55527c;
     color: white;
     text-align: center;
+}
+
+button {
+    display: flex;
+    width: 106px;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+    border: 2px solid #eccc18;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #000c7ae5;
+    font-family: 'Bungee', cursive;
+    position: absolute;
+    top: 93%;
+    left: 53%;
+    transform: scale(1.6);
+}
+
+button #shop {
+    width: 20px;
+    transform: scale(1.6) translate(10%);
+    display: none;
+}
+button #shop {
+    width: 20px;
+    transform: scale(1.6) translate(10%);
+}
+
+button:hover {
+    transform: scale(1.7);
+    box-shadow: 2px 2px 2px 2px rgb(51, 51, 51);
+    transition: all 0.2s ease-in-out;
+    background-color: #eccc18;
+    color: #000c7ae5;
+}
+
+button:active{
+    transform: scale(1);
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px rgb(51, 51, 51);
+    transition: all 0.2s ease-in-out;
+}
+button::after{
+    background-color: #6c757d;
+    border-color: #000000;
+    cursor: not-allowed;
+}
+button:disabled{
+    background-color: #6c757d;
+    border-color: #000000;
+    cursor: not-allowed;
 }
 /*end rules*/
 @media only screen and (max-width: 600px) {
@@ -146,7 +231,7 @@ img {
     #gerbang {
         max-width: 300px;
     }
-    #rules {
+    #reference {
         padding: 1rem 2rem;
         background-color: #55527c;
         color: white;
@@ -160,7 +245,7 @@ img {
     #gerbang {
         max-width: 400px;
     }
-    #rules {
+    #reference {
         padding: 1rem 2rem;
         background-color: #358300;
         color: white;
