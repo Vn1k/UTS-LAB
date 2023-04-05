@@ -2,7 +2,7 @@ const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
 
 const avatar1 = '/Images/CHAR/charDIAM.png'
-const avatar2 = '/Images/CHAR/charSENANG.png';
+const avatar2 = '/Images/CHAR/gabConSen.png';
 
 // let clicks = false;
 

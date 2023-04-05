@@ -3,20 +3,136 @@
 * {
     font-family: 'Ceviche One', cursive;
 }
-/*Nav*/
-.navigasi {
-    
+
+html, body
+{
+    overflow: hidden;
 }
-#gerbang {
-    width: 250px;
+
+body
+{
+    background: linear-gradient(to bottom, #23395d, #203354, #1c2e4a, #192841, #152238);
 }
-#gb-child {
+
+nav {
+    display: flex;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #ff87b2;
+    box-shadow: 0 0 5px 5px #c7c7c7;
     position: relative;
-    top: 50%;
-    left: 50%;
+    height: 10vh;
+  }
+
+  #judul {
+    display: flex;
+    align-items: center;
+    
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+
+  #judul a
+  {
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
     transform: translate(-50%, -50%);
-}
-/*END Nav*/
+  }
+
+  #judul span {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  #judul h2
+  {
+    color: #fff;
+  }
+
+  #menu {
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+  #menu-list ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:  0;
+  }
+
+  #menu-list a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #menu-list a:hover {
+    background-color: #fff;
+    color: #ff87b2;
+  }
+
+  #About {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+  }
+
+  #Ref {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(50%,-50%);
+    color: #fff;
+  }
+
+  /* Animasi ketika cursor berada di atas brand name /
+  #judul:hover {
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  }
+
+  / Animasi ketika cursor berada di atas menu item */
+  #menu-list a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+
 /*CARD*/
+#aboutus
+{
+    display: flex;
+    margin-top: 50px;
+    width: 120%;
+}
+
+.scrollz
+{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.scrollz_item
+{
+    scroll-snap-align: start;
+}
+
+
+
 
 /*END CARD*/

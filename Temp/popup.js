@@ -37,11 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
       popup.style.display = "none";
     }
   
-    popupButton.addEventListener("click", function() {
         showPopup();
         setTimeout(function() {
             hidePopup();
         }, 3000);
-    });
 });
   
