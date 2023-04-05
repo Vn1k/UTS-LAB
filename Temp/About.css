@@ -4,13 +4,9 @@
     font-family: 'Ceviche One', cursive;
 }
 
-html, body
-{
-    overflow: hidden;
-}
 
-body
-{
+-body
+<!-{
     background: linear-gradient(to bottom, #23395d, #203354, #1c2e4a, #192841, #152238);
 }
 
@@ -112,27 +108,23 @@ nav {
   }
 
 /*CARD*/
-#aboutus
-{
-    display: flex;
-    margin-top: 50px;
-    width: 120%;
+
+img {
+  width: 20%;
 }
 
-.scrollz
-{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+.parent {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-
-.scrollz_item
-{
-    scroll-snap-align: start;
+.section {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  height: 300px;
 }
-
-
-
-
+.section_item {
+  scroll-snap-align: start;
+}
 /*END CARD*/

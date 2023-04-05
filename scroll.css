@@ -1,0 +1,37 @@
+html, body, .parent {
+    height: 100%;
+}
+/*template*/
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*end template*/
+
+/*disesuain*/
+.parent img {
+    height: 360px;
+    width: 200px;
+    margin: 20px;
+}
+/*end disesuain*/
+/* template*/
+.section {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+/*end template*/
+/*atur ukuran scroll*/
+.section{
+    width: 15%;
+    height: 430px;
+    flex-flow: row nowrap;
+}
+/*end atur ukuran scroll*/
+.section_item {
+    scroll-snap-align: start;
+}
+/*end template*/
