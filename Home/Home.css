@@ -616,17 +616,10 @@ img {
       color: white;
     }
     #popup {
-<<<<<<< Updated upstream
-      position: fixed;
-      top: 50%;
-      left: 20%;
-      transform: translate(-50%, -50%);
-=======
       position: absolute;
       top: 50vh;
       left: 50vw;
       transform: translate(-50%, -50%)!important;
->>>>>>> Stashed changes
       flex-direction: column;
       background-color: #f9cfc2;
       border: solid 2px #55527c;
