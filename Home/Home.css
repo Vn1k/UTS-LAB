@@ -443,6 +443,9 @@ img {
 
 #popup {
   position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
   flex-direction: column;
   background-color: #f9cfc2;
   border: solid 2px #55527c;
@@ -454,7 +457,7 @@ img {
   opacity: 0;
   transform: scale(0);
   animation: popup 2s ease-in-out forwards; 
-  z-index: 2;
+  z-index: 9999;
 }
 
 #content {
