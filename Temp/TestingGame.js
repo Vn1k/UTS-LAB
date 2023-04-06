@@ -1,4 +1,3 @@
-const container = document.getElementById('container');
 const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
 

@@ -44,7 +44,7 @@ function NotEnoughMoney(){
 
     insidepopup.appendChild(inside2popup);
     popup.appendChild(insidepopup);
-    container.insertBefore(popup, container.firstChild);
+    document.body.insertBefore(popup, document.body.firstChild);
     setTimeout(function(){
         container.removeChild(popup);
     }, 2000)
