@@ -111,18 +111,33 @@ img {
     height: 100vh;
     overflow: hidden;
 }
-#gerbang {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 600px;
-    width: 100%;
-    height: 100%;
-    height: auto;
-    max-height: 80vh;
-    pointer-events: none;
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
+
+#gerbang {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  pointer-events: none;
+}
+
+#grass {
+  position: absolute;
+  bottom: 0vh;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
 #sakura {
   width: 600px;
   position: absolute;
@@ -136,21 +151,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-#grass {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    pointer-events: none;
-}
 #ninja {
     width: 100%;
     max-width: 150px;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 12%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
     pointer-events: none;
 }
 
