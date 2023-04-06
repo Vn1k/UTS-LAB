@@ -7,7 +7,7 @@ const avatar2 = '/Images/CHAR/gabConSen.png';
 
 // let clicks = false;
 
-var currentmoney = 0;
+var currentmoney = 250;
 
 function AddMoney(){
     currentmoney++;
@@ -75,5 +75,18 @@ function SellTempura(){
     else{
         RemoveMoney(65);
     }
+}
+
+function autoclicker(){
+    if(currentmoney < 250){
+        NotEnoughMoney();
+    }
+    else{
+        RemoveMoney(250);
+    }
+    setInterval(function() {
+        currentmoney += 1;
+        moneycounter.textContent = "Your Score : " + currentmoney;
+      }, 3000);
 }
 
