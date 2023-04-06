@@ -455,7 +455,7 @@ img {
 #popup {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
   flex-direction: column;
   background-color: #f9cfc2;
@@ -478,7 +478,7 @@ img {
   margin-right: 800px;
   width: 1000px;
   font-size: 40px;
-  padding-left: 9vw;
+  padding-left: 8vw;
 }
 
 @keyframes popup {
