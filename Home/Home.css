@@ -508,7 +508,58 @@ img {
         background-color: #55527c;
         color: white;
         text-align: center;
+        position: relative;
+        top: -25%;
     }
+    #About {
+      position: relative;
+      top: 50%;
+      left: 35%;
+      transform: translate(-118%,-20%);
+      color: #fff;
+      text-align: start;
+    }
+    #Ref {
+      position: relative;
+      top: 50%;
+      right: 35%;
+      transform: translate(-60%,100%);
+      color: #fff;
+      text-align: start;
+    }
+    #judul {
+      display: flex;
+      align-items: end;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-10%, -50%);
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+      font-weight: bold;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+    #judul span {
+      margin: 10px;
+      font-size: 1rem;
+    }
+    #grass {
+      position: absolute;
+      bottom: 25%;
+      width: 100%;
+      pointer-events: none;
+    }
+    #moneycounterblock {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -330%);
+      z-index: 2;
+      color: yellow;
+      text-shadow: 0 0 10px black;
+    }
+    
 }
 @media only screen and (max-width: 767px) {
     #sakura {
