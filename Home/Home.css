@@ -591,7 +591,7 @@ img {
     #character img {
       margin: 0;
       padding: 0;
-      width: 50vw;
+      width: 20vw;
       height: auto;
       transition: all 0.25s ease-out;
       position: absolute;
@@ -642,13 +642,56 @@ img {
     
 }
 @media only screen and (max-width: 767px) {
-    #sakura {
-        display: none;
+  #About {
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translate(-118%,-20%);
+    color: #fff;
+    text-align: start;
+  }
+  #Ref {
+    position: relative;
+    top: 50%;
+    right: 35%;
+    transform: translate(-60%,100%);
+    color: #fff;
+    text-align: start;
+  }
+  #judul {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-10%, -50%);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  #judul span {
+    margin: 10px;
+    font-size: 1rem;
+  }  
+  #sakura {
+      display: none;
+  }
+  #gerbang {
+      max-width: 400px;
+  }
+  #grass {
+    position: absolute;
+    bottom: 22%;
+    width: 100%;
+    pointer-events: none;
+  }
+  #moneycounterblock 
+    {
+      bottom: 10vh;
     }
-    #gerbang {
-        max-width: 400px;
-    }
-    #ninja {
+  #ninja {
       width: 100%;
       max-width: 100px;
       position: absolute;
@@ -657,16 +700,49 @@ img {
       transform: translate(-50%, -50%);
       z-index: 1;
       pointer-events: none;
-    }
-    #reference {
-        padding: 1rem 2rem;
-        background-color: #358300;
-        color: white;
-        text-align: center;
-    }
-    #reference-content li{
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+  }
+  #reference {
+    padding: 1rem 2rem;
+    background-color: #55527c;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -22%;
+  }
+  #reference ul {
+    list-style: none;
+  }
+  #reference-content {
+    position: relative;
+    text-align: start;
+  }
+  
+  #reference-content a{
+    text-decoration: none;
+    color: white;
+  }
+  #character img {
+    margin: 0;
+    padding: 0;
+    width: 20vw;
+    height: auto;
+    transition: all 0.25s ease-out;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  #cart {
+    width: 80px;
+    position: absolute;
+    top: 20%;
+    transform: scale(1.2) translate(50%);
+  }
+
+  #cart img {
+    width: 16px;
+    transform: translate(-20%, 0);
+  }
 }
+@media only screen and (min-width: 768px) and (max-width: )
