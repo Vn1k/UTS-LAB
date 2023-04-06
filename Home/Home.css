@@ -618,7 +618,7 @@ img {
     #popup {
       position: fixed;
       top: 50%;
-      left: 50%;
+      left: 20%;
       transform: translate(-50%, -50%);
       flex-direction: column;
       background-color: #f9cfc2;
@@ -644,6 +644,7 @@ img {
       font-size: 30px;
       display: flex;
       text-align: center;
+      padding-left: 60vw;
     }
     
 }
