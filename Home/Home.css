@@ -165,11 +165,24 @@ img {
 /*end bg*/
 /*rules*/
 #reference {
-    padding: 1rem 2rem;
-    background-color: #55527c;
-    color: white;
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #55527c;
+  color: white;
+}
+#rules-title {  
     text-align: center;
 }
+
+#reference-content {
+  position: relative;
+}
+
+#reference-content a{
+  text-decoration: none;
+  color: white;
+}
+
 #cart {
     width:9vh;
     gap: 10px;
