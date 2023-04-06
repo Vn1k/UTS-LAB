@@ -1,10 +1,10 @@
 const moneycounter2 = document.getElementById('moneycard');
 const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
-const currentsushiprice = document.getElementById('jsushi').getElementsByClassName("harga");
-const currentonigiriprice = document.getElementById('jonigiri').getElementsByClassName("harga");
-const currenttempuraprice = document.getElementById('jtempura').getElementsByClassName("harga");
-const currentautoprice = document.getElementById('autoclicker').getElementsByClassName("harga");
+const currentsushiprice = document.getElementById('jsushi').querySelector("harga");
+const currentonigiriprice = document.getElementById('jonigiri').querySelector("harga");
+const currenttempuraprice = document.getElementById('jtempura').querySelector("harga");
+const currentautoprice = document.getElementById('autoclicker').querySelector("harga");
 
 const avatar1 = '/Images/CHAR/charDIAM.png'
 const avatar2 = '/Images/CHAR/gabConSen.png';
@@ -75,7 +75,7 @@ function SellSushi(){
         bonusmoney++;
         RemoveMoney(sushiprice);
         sushiprice = Math.round(sushiprice += (sushiprice * 0.25));
-        currentsushiprice.textContent = rounded;
+        currentsushiprice.textContent = sushiprice;
     }
 }
 
