@@ -1,4 +1,4 @@
-const container = document.getElementById('container');
+const moneycounter2 = document.getElementById('moneycard');
 const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
 
@@ -9,9 +9,15 @@ const avatar2 = '/Images/CHAR/gabConSen.png';
 
 var currentmoney = 0;
 
+function DisplayMoney(x)
+{
+    moneycounter.textContent = "Your Money : " + x;
+    moneycounter2.textContent = "Your Money : " + x;
+}
+
 function AddMoney(){
     currentmoney++;
-    moneycounter.textContent = "Your Score : " + currentmoney;
+    DisplayMoney(currentmoney);
     avatar.src = avatar2;
     avatar.style.width = '18vw';
     setTimeout(function(){
@@ -30,7 +36,7 @@ function RemoveMoney(removedmoney){
         }
         money--;
         counter++;
-        moneycounter.textContent = "Your Score : " + money;
+        DisplayMoney(money);
     }, 5)
 }
 
