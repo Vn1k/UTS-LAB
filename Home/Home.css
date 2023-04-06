@@ -246,9 +246,15 @@ img {
   background-color: rgb(46, 45, 45, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 50px;
   text-align:center;
   z-index: 2;
+}
+
+#moneycard
+{
+  color: yellow;
+  text-shadow: 0 0 10px black;
 }
 
 .sidenav img {
@@ -444,8 +450,7 @@ img {
 #popup {
   position: absolute;
   top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  left: 30vw;
   flex-direction: column;
   background-color: #f9cfc2;
   border: solid 2px #55527c;
@@ -471,7 +476,7 @@ img {
   justify-content: center;
   font-size: 40px;
   display: flex;
-  
+  padding-top: 10px;
 }
 
 @keyframes popup {
