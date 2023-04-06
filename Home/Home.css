@@ -123,16 +123,18 @@ img {
     max-height: 80vh;
     pointer-events: none;
 }
-#sakura
- {
-    width: 600px;
-    position: absolute;
-    bottom: 50%;
-    left: 49.9%;
-    transform: translate(58.7%);
-    z-index: 1;
-    pointer-events: none;
-    overflow: hidden;
+#sakura {
+  width: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+#sakura img {
+  max-width: 100%;
+  height: auto;
 }
 #grass {
     position: absolute;
