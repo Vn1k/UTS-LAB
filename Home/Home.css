@@ -455,16 +455,14 @@ img {
 #popup {
   position: absolute;
   top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  left: 35vw;
+  transform: translate(50%, 50%);
   flex-direction: column;
   background-color: #f9cfc2;
   border: solid 2px #55527c;
-  align-items: center;
-  justify-content: center;
   border-radius: 10px;
-  display: flex;
-  width: 40%;
+  width: 900px;
+  margin-right: 100px;
   opacity: 0;
   transform: scale(0);
   animation: popup 2s ease-in-out forwards; 
@@ -477,11 +475,10 @@ img {
   color: #55527c;
   -webkit-text-stroke: 3px 0px 3px #000;
   font-size: 25px;
-  margin: 0px;
-  align-items: center;
-  justify-content: center;
+  margin-right: 800px;
+  width: 1000px;
   font-size: 40px;
-  display: flex;
+  padding-left: 9vw;
 }
 
 @keyframes popup {
