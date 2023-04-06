@@ -132,6 +132,13 @@ section {
   justify-content: center;
 }
 
+.card-body
+{
+  text-align: center;
+  color: #55527c;
+  text-shadow: 3px 3px 4px #92756b;
+}
+
 .card-title
 {
   font-size: 200%;
@@ -148,11 +155,12 @@ section {
   height: 80vh;
   max-width: 350px;
   margin: 10px;
+  background-color: #e3cbc1;
 }
 
 .card:hover
 {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: all 0.2s ease-in-out;
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
@@ -170,22 +178,20 @@ section {
   display: none;
 }
 
-.content
-{
-
+.content .ig {
+  color: #e3cbc1;
+  font-size: 40px;
+  position: absolute;
+  top: 92%;
 }
 
-.content:hover span
-{
-  display: block;
-}
-
-.ig
-{
-  color: white;
-  font-size: 30px;
+.content:hover .ig {
+  display: block !important;
   text-align: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
+
 
 /*END CARD*/
