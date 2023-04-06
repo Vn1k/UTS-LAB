@@ -77,3 +77,16 @@ function SellTempura(){
     }
 }
 
+function autoclicker(){
+    if(currentmoney < 250){
+        NotEnoughMoney();
+    }
+    else{
+        RemoveMoney(250);
+    }
+    setInterval(function() {
+        currentmoney += 1;
+        moneycounter.textContent = "Your Score : " + currentmoney;
+      }, 3000);
+}
+
