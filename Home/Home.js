@@ -1,6 +1,10 @@
 const moneycounter2 = document.getElementById('moneycard');
 const moneycounter = document.getElementById('moneycounter');
 const avatar = document.getElementById('sushichar');
+const currentsushiprice = document.getElementById('jsushi').getElementsByClassName("harga");
+const currentonigiriprice = document.getElementById('jonigiri').getElementsByClassName("harga");
+const currenttempuraprice = document.getElementById('jtempura').getElementsByClassName("harga");
+const currentautoprice = document.getElementById('autoclicker').getElementsByClassName("harga");
 
 const avatar1 = '/Images/CHAR/charDIAM.png'
 const avatar2 = '/Images/CHAR/gabConSen.png';
@@ -8,6 +12,12 @@ const avatar2 = '/Images/CHAR/gabConSen.png';
 // let clicks = false;
 
 var currentmoney = 0;
+var bonusmoney = 0;
+var sushiprice = 10;
+var onigiriprice = 1000;
+var tempuraprice = 100000;
+var autoprice = 100;
+var counterauto = 0;
 
 function DisplayMoney(x)
 {
@@ -16,7 +26,7 @@ function DisplayMoney(x)
 }
 
 function AddMoney(){
-    currentmoney++;
+    currentmoney += (1 + bonusmoney);
     DisplayMoney(currentmoney);
     avatar.src = avatar2;
     avatar.style.width = '18vw';
@@ -57,42 +67,57 @@ function NotEnoughMoney(){
 }
 
 function SellSushi(){
-    if(currentmoney < 85){
+    console.log(sushiprice)
+    if(currentmoney < sushiprice){
         NotEnoughMoney();
     }
     else{
-        RemoveMoney(85);
+        bonusmoney++;
+        RemoveMoney(sushiprice);
+        sushiprice = Math.round(sushiprice += (sushiprice * 0.25));
+        currentsushiprice.textContent = rounded;
     }
 }
 
 function SellOnigiri(){
-    if(currentmoney < 35){
+    if(currentmoney < onigiriprice){
         NotEnoughMoney();
     }
     else{
-        RemoveMoney(35);
+        bonusmoney += 10;
+        RemoveMoney(onigiriprice);
+        onigiriprice = Math.round(onigiriprice += (onigiriprice * 0.25));
+        currentonigiriprice.textContent = onigiriprice;
     }
 }
 
 function SellTempura(){
-    if(currentmoney < 65){
+    if(currentmoney < tempuraprice){
         NotEnoughMoney();
     }
     else{
-        RemoveMoney(65);
+        bonusmoney += 100;
+        RemoveMoney(tempuraprice);
+        tempuraprice = Math.round(tempuraprice += (tempuraprice * 0.25));
+        currenttempuraprice.textContent = tempuraprice;
     }
 }
 
 function autoclicker(){
-    if(currentmoney < 250){
+    if(currentmoney < autoprice){
         NotEnoughMoney();
     }
     else{
-        RemoveMoney(250);
-        setInterval(function() {
-            currentmoney += 1;
-            moneycounter.textContent = "Your Score : " + currentmoney;
-          }, 3000);
+        counterauto++;
+        RemoveMoney(autoprice);
+        for(var i = 0; i < counterauto; i++){
+            setInterval(function() {
+                currentmoney += 1;
+                DisplayMoney(currentmoney);
+              }, 1000);
+        }
+        autoprice = Math.round(autoprice += (autoprice * 0.5));
+        currentautoprice.textContent = autoprice;
     }
 }
 
