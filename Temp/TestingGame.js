@@ -7,7 +7,7 @@ const avatar2 = '/Images/CHAR/gabConSen.png';
 
 // let clicks = false;
 
-var currentmoney = 250;
+var currentmoney = 0;
 
 function AddMoney(){
     currentmoney++;
