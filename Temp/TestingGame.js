@@ -31,7 +31,7 @@ function RemoveMoney(removedmoney){
         money--;
         counter++;
         moneycounter.textContent = "Your Score : " + money;
-    }, 10)
+    }, 5)
 }
 
 function NotEnoughMoney(){

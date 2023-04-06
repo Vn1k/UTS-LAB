@@ -14,69 +14,90 @@ body {
 /*navigasi*/
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     padding: 1rem 2rem;
-    background-color: pink;
-    border-bottom: 2px solid #ddd;
+    background-color: #ff87b2;
+    box-shadow: 0 0 5px 5px #c7c7c7;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    top: 0;
 }
- 
+  
 #judul {
     display: flex;
-    text-align: center;
-    letter-spacing: 1px;
     align-items: center;
-    margin: 0 auto;
-}
-  
-#judul h2 {
-    margin-right: 5px;
-}
-  
-#menu {
-    display: flex;
-    align-items: center;
-}
-  
-#menu ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-  
-#menu li {
-    margin: 0 10px;
-}
-  
-#menu a {
-    display: block;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #333;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     font-weight: bold;
-    transition:all 0.2s ease;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
   
-#menu a:hover {
-    background-color: #ddd;
+#judul span {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+#menu {
+    font-size: 1.2rem;
+    z-index: 2;
 }
   
-#judul h2:first-child,
-#judul h2:last-child {
-    margin-right: auto;
+#menu-list ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:  0;
 }
   
-#menu li:first-child {
-    margin-right: auto;
+#menu-list a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
   
-#menu li:last-child {
-    margin-left: auto;
-}  
+#menu-list a:hover {
+    background-color: #fff;
+    color: #ff87b2;
+}
+  
+#About {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+
+}
+  
+#Ref {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(50%,-50%);
+    color: #fff;
+}
+  
+  /* Animasi ketika cursor berada di atas brand name */
+#judul:hover {
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+  
+  /* Animasi ketika cursor berada di atas menu item */
+#menu-list a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+  
 /*end navigasi*/
 
 #container {
@@ -93,7 +114,7 @@ nav {
 
 #moneycounterblock {
     position: absolute;
-    top: 16vh;
+    top: 12vh;
 }
 
 #character {
@@ -114,7 +135,8 @@ nav {
 #konten {
     position: absolute;
     left: 1vw;
-    top: 1vh;
+    top: 50vh;
+    transform: translate(0, -50%);
 }
 
 #upgrade {
@@ -122,8 +144,6 @@ nav {
     font-size: 32px;
     /* color: #000000; */
     /* text-shadow: 1px 1px 1px #000; */
-    margin-bottom: 1vh;
-    margin-top: 20vh;
 }
 
 #sushi {
