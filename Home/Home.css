@@ -591,7 +591,7 @@ img {
     #character img {
       margin: 0;
       padding: 0;
-      width: 20vw;
+      width: 50vw;
       height: auto;
       transition: all 0.25s ease-out;
       position: absolute;
@@ -599,6 +599,15 @@ img {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+    }
+    #reference-content {
+      position: relative;
+      text-align: start;
+    }
+    
+    #reference-content a{
+      text-decoration: none;
+      color: white;
     }
     
 }
