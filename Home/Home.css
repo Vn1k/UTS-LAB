@@ -456,8 +456,7 @@ img {
   position: absolute;
   top: 50vh;
   left: 50vw;
-  transform: translate(-50%, -50%);
-  flex-direction: column;
+  transform: translate(-50%, -50%)!important;
   background-color: #f9cfc2;
   border: solid 2px #55527c;
   align-items: center;
@@ -465,8 +464,6 @@ img {
   border-radius: 10px;
   display: flex;
   width: 40%;
-  opacity: 0;
-  transform: scale(0);
   animation: popup 2s ease-in-out forwards; 
   z-index: 9999;
 }
@@ -481,7 +478,10 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  display: flex;
+}
+
+#content p{
+  text-align: center;
 }
 
 @keyframes popup {
