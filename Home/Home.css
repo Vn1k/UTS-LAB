@@ -352,7 +352,7 @@ img {
   justify-content: space-between;
 }
 
-#su, #oni, #tem {
+#su, #oni, #tempura-title {
   margin-left: 6px;
 }
 
@@ -368,7 +368,6 @@ img {
   background-color: #ffaf3f;
   color: #ffb043;
 }
-
 
 #sushi:hover #su {
   display: none;
@@ -432,6 +431,8 @@ img {
   width: 210px;
   height: 50px;
   background-color: #f9cfc2;
+  margin: 2px;
+  margin-bottom: 10px;
 }
 
 #auto:hover {
