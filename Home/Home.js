@@ -40,14 +40,15 @@ function RemoveMoney(removedmoney){
     var counter = 1;
     var money = currentmoney;
     currentmoney -= removedmoney;
-    var DecreasingAnimation = setInterval(function(){
+    /*var DecreasingAnimation = setInterval(function(){
         if(counter == removedmoney){
             clearInterval(DecreasingAnimation);
         }
         money--;
         counter++;
-        DisplayMoney(money);
-    }, 5)
+       
+    }, 0)*/ 
+    DisplayMoney(currentmoney);
 }
 
 function NotEnoughMoney(){
